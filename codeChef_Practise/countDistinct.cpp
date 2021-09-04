@@ -29,7 +29,7 @@ int main()
     }
     cout<<count<<endl;
 
-    Approach 2--Using set
+    //Approach 2--Using set
 
     cout<<s.size()<<endl;
 }

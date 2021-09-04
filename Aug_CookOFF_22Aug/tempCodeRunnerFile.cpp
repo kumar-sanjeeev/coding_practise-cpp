@@ -1,0 +1,1 @@
+cout<<"BIN: "<<bin<<endl;

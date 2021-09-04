@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+const int N=1e7+10;
+int p[N];
 void primeSieve(int *p)
 {
     //first make all odd numbers as prime---(we have all even numbers are not prime)
@@ -33,13 +35,20 @@ int main()
 
     int n;
     cin>>n;
-    int p[100000]={0};
+    // int p[100000]={0};
     primeSieve(p);
     cout<<"XXX"<<endl;
     for(int i=0; i<=n; i++)
     {
         if(p[i]==1)
             cout<<i<<" ";
+    }
+    cout<<endl;
+
+    for(int i=0; i<=n; i++)
+    {
+        if(p[i] && p[n-i])
+            cout<<i<<" "<<(n-i)<<endl;
     }
     cout<<endl;
 
